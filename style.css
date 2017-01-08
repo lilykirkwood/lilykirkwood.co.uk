@@ -1,0 +1,1150 @@
+/*
+Theme Name: TGWS
+Author: Lily Kirkwood
+Author URI: http://www.thegreenwebstudio.co.uk
+Version: 1.0
+*/
+
+/* Color Pallette
+Turq: #186373
+Off-white (h2): #f7faf1
+Grey-white (contact): #d3d4d7
+Light green (error msg): #a5d1a3
+'Black': #09242a
+*/
+
+/*General Styles*/
+a {
+  text-decoration: none;
+  color:inherit;
+}
+main a {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  color: #09242a;
+  text-align: center;
+  font-size: 40px;
+  line-height: 40px;
+  margin: 10px 0 25px 0;
+  font-weight: 100;
+  padding-bottom: 5px;
+  border-bottom: 1px dashed #09242a;
+  width: 93%;
+  max-width: 1250px;
+}
+p {
+  margin: 0;
+}
+
+/*Main Containers*/
+/* Flex */
+header, main, footer, article, .flex-col, .contact, #wprmenu_bar .menu_title, .wp-portfolio-desc, main div.mw-container, .process, .latest-projects-wrap, .latest-projects-1, .home-about, .lp-h4, .experience-item {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.huge_it_portfolio_container, .latest-projects {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    -webkit-box-pack: space-between;
+      -ms-flex-pack: space-between;
+      justify-content: space-between;
+}
+.site-nav ul {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-around;
+      -ms-flex-pack: space-around;
+      justify-content: space-around;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: #fff;
+  background-image: url('img/color9.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  margin: 0;
+  min-height:100%;
+  position:relative;
+}
+html, main {
+  height: 100%;
+}
+main {
+  margin: 50px 0 0 0;
+}
+main p {
+  text-align: justify;
+}
+.mw-container {
+  width: 97%;
+  max-width: 1200px;
+  margin: 0;
+}
+.twp {
+  width: 95% !important;
+  max-width: 960px !important;
+}
+.tw {
+  width: 90%;
+  max-width: 900px;
+}
+.fw {
+  width: 100%;
+}
+
+/* Spacing */
+footer {
+  margin-top: 15px;
+}
+#nf-form-1-cont {
+  margin: 15px 0;
+}
+.margin-tb {
+  margin: 15px 0 30px 0 !important;
+}
+.margin-t {
+  margin: 25px 0 0 0;
+}
+article {
+  padding: 30px 0;
+}
+
+/* MOBILE HEADER MENU */
+header {
+  display: none;
+}
+#wprmenu_bar {
+  background: transparent;
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/trans-ffffff-90.png');
+  height: 70px;
+  border-bottom: 2px solid #186373;
+}
+#wprmenu_menu ul li a {
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/trans-ffffff-90.png');
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding: 6px 0 6px 0;
+}
+#wprmenu_bar .bar_logo {
+  height: 60px;
+  padding: 8px 35px 8px 0;
+}
+#wprmenu_bar .wprmenu_icon {
+  margin-top: 15px;
+}
+#wprmenu_menu.top {
+  margin-top: 70px;
+  position: fixed;
+}
+#wprmenu_menu.wprmenu_levels ul li {
+  border-bottom: 1px solid #e6e6e6 !important;
+}
+#wprmenu_menu.wprmenu_levels ul li#menu-item-128 {
+  border-bottom: 1px solid #186373 !important;
+}
+
+
+/* PORTFOLIO MAIN PAGE */
+.wp-portfolio-gallery {
+  width: 100%;
+  max-width: 1200px;
+  color: #09242a;
+  margin: 0;
+}
+.nav-within {
+  width: 98%;
+  max-width: 1200px;
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/186373-90.png');
+  border-radius: 5px;
+  padding: 20px 1% 10px 1%;
+  margin-bottom: 20px;
+}
+.nav-within button, .nav-within a {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+}
+.nav-within button.active, .nav-within a.active {
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/09242a-90.png');
+}
+.wp-portfolio-gallery .mix {
+  width: 100% !important;
+  margin-bottom: 15px;
+}
+.wp-portfolio-inner {
+    border-radius: 5px;
+    background-color: transparent !important;
+    background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/trans-ffffff.png');
+    position: relative;
+    border: 3px solid transparent !important;
+    margin: 0 !important;
+    /*set animation*/
+    -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+}
+.wp-portfolio-inner #port-lightbox {
+  display: none !important;
+}
+.wp-portfolio-gallery .mix >div.wp-portfolio-inner {
+  padding: 4%;
+}
+.wp-portfolio-inner {
+  position: relative;
+  border: 4px solid transparent !important;
+  /*set animation*/
+  -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.wp-portfolio-inner:hover {
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/trans-ffffff-90.png');
+  border: 4px solid #186373 !important;
+  /*set animation*/
+  -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.wp-portfolio-inner .div-link {
+  position:absolute !important;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  text-decoration:none;
+  z-index:10; /* raises anchor tag above everything else in div */
+  background-color:white; /*workaround to make clickable in IE */
+  opacity: 0; /*workaround to make clickable in IE */
+  filter: alpha(opacity=1); /*workaround to make clickable in IE */
+}
+.wp-portfolio-desc h4 {
+  font-family: 'Bitter', serif;
+  font-size: 36px;
+  letter-spacing: 1px;
+  margin: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.wp-portfolio-desc p {
+  margin: 10px 0 0 0;
+  font-size: 16px;
+}
+.wp-portfolio-desc p, .wp-portfolio-desc img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* PORTFOLIO ITEM PAGE */
+article, .home-about, .experience-item {
+  color: #09242a;
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/fff-80.png');
+  border-radius: 5px;
+  width: 100%;
+}
+article .heading-banner {
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/186373-90.png');
+  margin: 0 0 20px 0;
+  padding: 20px 0;
+}
+h2 {
+  font-family: 'Bitter', serif;
+  font-size: 42px;
+  line-height: 50px;
+  margin: 0 0 15px 0;
+  text-align: center;
+  color: #f7faf1;
+  font-weight: normal;
+}
+h4 {
+  text-align: center;
+  font-family: 'Bitter', serif;
+  font-size: 32px;
+  font-weight: normal;
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 1.5px dotted #186373;
+  letter-spacing: 2px;
+}
+p, .wp-portfolio-desc p {
+  line-height: 24px;
+}
+.portfolio-item ul {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.portfolio-item .tags li, .nav-within button, .nav-within a {
+  list-style: none;
+  float: left;
+  margin: 0 5px 10px 5px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 8px 8px;
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/186373-90.png');
+  background-color: transparent;
+  /*set animation*/
+  -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+}
+.portfolio-item li, .portfolio-item a {
+  display:inline-block;
+	text-align:center;
+  color: white;
+}
+/*.portfolio-item .tags li:hover, */.nav-within button:hover, .nav-within a:hover {
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/09242a-90.png');
+  /*set animation*/
+  -webkit-transition: background-image 0.5s;
+    transition: background-image 0.5s;
+}
+.portfolio-item .tags li:hover {
+  cursor: auto;
+}
+.portfolio-item .tags, h2, .code-links, .nav-within, ul.tab {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.wp-portfolio-gallery {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.code-links {
+  margin-top: 15px;
+}
+.portfolio-item .git-link, .portfolio-item .live-link {
+  border-bottom: 3px solid transparent;
+  font-weight: normal;
+  float: left;
+  /*set animation*/
+  -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.portfolio-item .git-link:hover, .portfolio-item .live-link:hover {
+  border-bottom: 3px solid #fff;
+}
+.portfolio-item .git-link {
+  margin-right: 25px;
+  font-size: 28px;
+  padding: 0 2px;
+}
+.portfolio-item .live-link i {
+  padding-left: 5px;
+}
+
+
+
+/* PROCESS */
+.process {
+  margin-top: 20px;
+}
+p.process-expand {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+p.process-expand i {
+  padding: 0 6px 0 0;
+}
+.process section {
+  width: 100%;
+}
+.huge_it_portfolio_container {
+  height: auto !important;
+}
+.clearfix:after {
+  display: none !important;
+}
+.portelement {
+  width: 49% !important;
+  position: static !important;
+  transform: none !important;
+  border-radius: 2px;
+  border: 1px solid rgba(27, 27, 27, 0.09) !important;
+}
+.portelement .image-block, .portelement .image-block img {
+  height: 130px !important;
+  object-fit: cover;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.portelement .image-block .image-overlay a {
+  background: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/magnifying-glass.png') center center no-repeat !important;
+}
+/* Pop-up */
+.huge_it_portfolio_popup_list .popup-wrapper .image-block img {
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  width: auto !important;
+}
+.image-block {
+  border: none !important;
+}
+.huge_it_portfolio_popup_list .popup-wrapper .right-block .description {
+  font-size: 17px;
+  line-height: 24px;
+  text-align: left;
+}
+.huge_it_portfolio_popup_list {
+  padding: 0 !important;
+  top: -70px !important;
+}
+.huge_it_portfolio_popup_list li.pupup-element {
+  margin: 0 1.5% !important;
+  width: 97% !important;
+}
+.huge_it_portfolio_popup_list .heading-navigation .left-change, .huge_it_portfolio_popup_list .heading-navigation .right-change {
+  background-color: #186373;
+  border: none !important;
+}
+.huge_it_portfolio_popup_list .heading-navigation .left-change:hover, .huge_it_portfolio_popup_list .heading-navigation .right-change:hover {
+  background-color: #dedede !important;
+  color: #186373 !important;
+}
+.huge_it_portfolio_popup_list .heading-navigation .right-change a, .huge_it_portfolio_popup_list .heading-navigation .left-change a {
+  color: #fff !important;
+  width: 100% !important;
+}
+.huge_it_portfolio_popup_list .heading-navigation .right-change a:hover, .huge_it_portfolio_popup_list .heading-navigation .left-change a:hover {
+  color: #186373 !important;
+}
+.huge_it_portfolio_popup_list li.pupup-element .popup-wrapper {
+  width: 96% !important;
+  height: 96% !important;
+  padding: 2% !important;
+}
+.huge_it_portfolio_popup_list .popup-wrapper .right-block .title {
+  margin: 30px 0 3px 0 !important;
+}
+.huge_it_portfolio_popup_list li.pupup-element .popup-wrapper .right-block, .huge_it_portfolio_popup_list .popup-wrapper .image-block {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+.huge_it_portfolio_popup_list li.pupup-element .popup-wrapper .right-block > div {
+  padding-right: 0 !important;
+}
+
+
+
+/* CONTACT */
+.contact {
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/09242a-90.png');
+  border-radius: 5px;
+  width: 100%;
+}
+#nf-form-1-cont {
+  font-size: 18px;
+  overflow: auto;
+}
+.nf-field-container, #ninja_forms_required_items {
+  margin-bottom: 15px;
+}
+#nf-form-1-cont h3, h3 {
+  font-weight: normal;
+  letter-spacing: 0.8px;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 5px;
+}
+#nf-form-1-cont label {
+  font-weight: normal;
+}
+#nf-form-1-cont input, #nf-form-1-cont textarea {
+  border: 1px solid transparent;
+  padding: 5px;
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/trans-ffffff.png');
+  background-color: transparent;
+  border-radius: 2px;
+  font-size: 16px;
+  font-family: Arial;
+}
+#nf-form-1-cont input:focus, #nf-form-1-cont textarea:focus {
+  border: 1px solid #a5d1a3;
+}
+#nf-form-1-cont .nf-error .ninja-forms-field {
+  border: 2px solid #a5d1a3;
+}
+#nf-form-1-cont .ninja-forms-req-symbol, #nf-form-1-cont .nf-error-msg {
+  color: #a5d1a3;
+}
+#nf-form-1-cont .nf-form-fields-required, #nf-form-1-cont .nf-error-field-errors {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+#nf-form-1-cont [type~=button] {
+  background: #186373;
+  color: white;
+  padding: 10px 0;
+  font-weight: bold;
+  border-radius: 2px;
+  width: 100%;
+}
+#nf-form-1-cont [type~=button]:hover {
+  cursor: hand;
+  cursor: pointer;
+}
+#nf-form-1-cont .submit-container {
+  margin-bottom: 10px;
+}
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}
+.contact p {
+  font-size: 17px;
+  text-align: center;
+  line-height: 28px;
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+.contact i {
+  margin-right: 8px;
+}
+.contact a {
+  text-decoration: underline;
+}
+
+
+/* ABOUT PAGE */
+
+/* Tabs */
+ul.tab {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+ul.tab li {
+  float: left;
+}
+ul.tab li a {
+  text-decoration: none;
+  transition: 0.3s;
+  color: #fff;
+  font-weight: normal;
+}
+.tabcontent {
+  width: 100%;
+  -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  flex-wrap: wrap;
+  /* Fade animation */
+  -webkit-animation: fadeInEffect 2s;
+  animation: fadeInEffect 2s; /* Fading effect takes 1 second */
+}
+@-webkit-keyframes fadeInEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes fadeInEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.tabcontent span {
+  font-weight: bold;
+}
+.tabcontent .q {
+  font-weight: normal;
+  font-size: 1.1em;
+}
+.tabcontent img {
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid rgba(27, 27, 27, 0.09);
+}
+
+
+/* HOME FRONT PAGE */
+/* About */
+.home-about, .latest-projects-wrap {
+  padding: 20px 0 30px 0;
+}
+.home-about h3 {
+  margin-bottom: 10px;
+}
+.home-about img {
+  border-radius: 5px;
+  border: 1px solid rgba(27, 27, 27, 0.09);
+  width: 100%;
+  margin-bottom: 15px;
+}
+.home-about .text a {
+  color: #186373;
+  font-weight: bold;
+}
+.home-about .text a:hover {
+  text-decoration: underline;
+}
+.home-about .view-all {
+  width: 100%;
+}
+.home-about .view-all a:hover {
+  border-color: #186373;
+}
+.home-about .margin-t {
+  margin-top: 12px;
+}
+/* Latest */
+.latest-projects-wrap {
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/186373-70.png');
+  border-radius: 5px;
+  width: 100%;
+}
+.latest-projects-wrap h4 {
+  font-size: 28px;
+}
+.latest-projects .div-link {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  z-index: 10;
+  background-color: white;
+  opacity: 0;
+}
+.latest-projects-1-wrap {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+  border: 3px solid transparent;
+  border-radius: 5px;
+  background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/trans-ffffff-90.png');
+  /*set animation*/
+  -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.latest-projects-1-wrap:hover {
+  border: 3px solid #186373;
+  /*set animation*/
+  -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.latest-projects-1 {
+  width: 92%;
+  padding: 4%;
+  color: #09242a;
+}
+.latest-projects-1 h4 {
+  padding-bottom: 0;
+  border-bottom: none;
+  letter-spacing: 0px;
+}
+.latest-projects-1 img {
+  width: 100%;
+  margin: 15px 0;
+}
+.view-all a {
+  clear: both;
+  float: right;
+  font-weight: bold;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 2px;
+  /*set animation*/
+  -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.view-all a:hover {
+  border-bottom: 3px solid #f7faf1;
+  /*set animation*/
+  -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+/* Experience Page */
+.experience-item {
+  padding: 40px 0 30px 0;
+  margin-bottom: 15px;
+}
+.experience-item h3 {
+  font-family: 'Bitter', serif;
+  margin: 0 0 15px 0;
+  color: #186373;
+}
+.experience-item h3 a {
+  font-weight: normal;
+}
+.experience-item p {
+  text-align: left;
+}
+.experience-item .view-all a:hover {
+  border-color: #186373;
+}
+
+
+/* Index.php */
+.post h2 {
+  font-size: 34px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+
+/* FOOTER */
+footer .mw-container {
+  color: #09242a;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px 0 2px 0;
+  /*set animation*/
+  -webkit-transition: background-image 1s;
+    transition: background-image 1s;
+}
+footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  text-align: center;
+}
+footer h6, footer .credit {
+  text-align: center;
+}
+footer .credit-wrap {
+  margin: 15px 5%;
+  width: 90%;
+}
+footer h6 {
+  margin: 0 0 5px 0;
+  font-size: 13px;
+}
+footer .credit {
+  font-size: 13px;
+}
+footer .credit a {
+  color: #09242a;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+
+
+
+
+/* ===== TABLET STYLES ===== */
+@media all and (min-width: 768px) {
+  .mw-container {
+    width: 95%;
+  }
+  main {
+    margin: 60px 0 0 0;
+  }
+
+  /* Spacing */
+  footer {
+    margin-top: 20px;
+  }
+
+  /* MOBILE HEADER MENU */
+  #wprmenu_bar {
+    height: 80px;
+  }
+  #wprmenu_bar .bar_logo {
+    height: 70px;
+    padding-right: 35px;
+  }
+  #wprmenu_bar .wprmenu_icon {
+    margin-top: 20px;
+  }
+  #wprmenu_menu.top {
+    margin-top: 80px;
+  }
+  #wprmenu_menu ul li a {
+    font-size: 26px;
+    letter-spacing: 2px;
+    padding: 9px 0 10px 0;
+  }
+
+  /* Process */
+  .portelement .image-block, .portelement .image-block img {
+    height: 170px !important;
+  }
+  /* Pop-up */
+  .huge_it_portfolio_popup_list {
+    top: 5% !important;
+    width: 100% !important;
+    left: 0 !important;
+  }
+  .huge_it_portfolio_popup_list li.pupup-element {
+    margin: 0 2.5% !important;
+    width: 95% !important;
+  }
+  .huge_it_portfolio_popup_list .popup-wrapper_4 .image-block_4 {
+    height: auto;
+    max-height:none;
+  }
+
+  /* CONTACT FORM */
+  #nf-form-1-cont h3, h3 {
+    font-size: 24px;
+    text-align: left;
+    margin-top: 24px;
+  }
+  #nf-form-1-cont .nf-form-fields-required, #nf-form-1-cont .nf-error-field-errors {
+    float: right;
+    width: auto;
+    margin-bottom: 10px;
+    font-size: inherit;
+  }
+  #nf-form-1-cont [type~=button] {
+    float: right;
+    padding: 15px 50px;
+    width: auto;
+  }
+
+  /* PORTFOLIO LIST */
+  .wp-portfolio-gallery .mix {
+    width: 49% !important;
+  }
+
+  /* ABOUT */
+  .tabcontent img {
+    width: 55%;
+  }
+  .tabcontent img.left {
+    float: left;
+    margin-right: 15px;
+  }
+  .tabcontent img.right {
+    float: right;
+    margin-left: 15px;
+  }
+
+  /* HOME FRONT PAGE */
+  /* About */
+  .home-about h3, .latest-projects-wrap h3 {
+    margin-top: 10px;
+  }
+  .home-about h3 {
+    margin-bottom: 22px;
+  }
+  .home-about img {
+    width: 45%;
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+  .home-about .margin-t {
+    margin-top: 15px;
+  }
+  /* Latest */
+  .latest-projects-1-wrap {
+    width: 31.5%;
+    float: left;
+    margin-bottom: 0;
+  }
+  .lp-h4 {
+    height: 66px;
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+  }
+  .latest-projects-1 img {
+    height: 90px;
+  }
+
+
+}
+
+/* ===== DESKTOP STYLES ===== */
+@media all and (min-width: 940px) {
+  header {
+    display: inline;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-image: url('http://lilykirkwood.co.uk/wp-content/uploads/2016/11/trans-ffffff.png');
+    border-bottom: 2px solid #186373;
+    height:184px;
+    /*set animation*/
+    -webkit-transition: height 1s;
+      transition: height 1s;
+      z-index: 150;
+  }
+  header div.mw-container {
+    -webkit-box-pack: center;
+      -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-box-align: center;
+      -ms-flex-align: center;
+        align-items: center;
+    display: -webkit-box;
+      display: -ms-flexbox;
+        display: flex;
+    height: 100%;
+    margin: auto;
+  }
+
+  main {
+  margin: 230px 0 0 0;
+  }
+  .mw-container {
+    width: 90%;
+  }
+
+
+  /* Spacing */
+  footer {
+    margin-top: 20px;
+  }
+  .margin-tb, #nf-form-1-cont {
+    margin: 20px 0 30px 0 !important;
+  }
+
+  /* Logo */
+  header #logo-expanded {
+    padding: 0 20px 0 20px;
+    display: inline;
+  }
+  header #logo-expanded, header #logo-expanded img {
+    /*set animation*/
+    -webkit-transition: height 1s;
+      transition: height 1s;
+  }
+  header #logo-expanded, header #logo-expanded img {
+    height: 140px;
+  }
+  header #logo-collapsed {
+    display: none;
+  }
+
+
+  /* NAV */
+  .site-nav {
+    width: 40%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: #09242a;
+    /*set animation*/
+    -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+  }
+  .site-nav .left, .site-nav .right {
+    display: inline;
+  }
+  .site-nav ul {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-padding-start: 0;
+  }
+  .site-nav li {
+    list-style: none;
+    float: left;
+    text-align: center;
+  }
+  .site-nav a {
+    color: #09242a;
+    border-bottom: 3px solid transparent;
+    /*set animation*/
+    -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  .site-nav a:hover {
+    border-bottom: 3px solid #186373;
+    /*set animation*/
+    -webkit-transition: all 0.1s;
+      transition: all 0.1s;
+  }
+
+
+  /* HEADER ELEMENT ORDER */
+  .flex:nth-child(3) {
+    -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+        order: 1;
+  }
+  .flex:nth-child(1) {
+    -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+        order: 2;
+  }
+  .flex:nth-child(2) {
+    -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+        order: 3;
+  }
+  .flex:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+        order: 4;
+  }
+
+  /* Scrolled Header */
+  header.sticky {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+  }
+  header.sticky #logo-expanded, header.sticky #logo-expanded img {
+    height: 64px;
+  }
+  header.hide #logo-collapsed {
+    display: inline;
+    padding: 0 20px 0 20px;
+  }
+  header.hide #logo-collapsed, header.hide #logo-collapsed img {
+    height: 54px;
+  }
+  header.hide #logo-expanded {
+    display: none;
+  }
+
+
+/* PORTFOLIO ITEM */
+  h2 {
+    font-size: 55px;
+    margin: 10px 0 25px 0;
+  }
+  .portfolio-item .tags, h2, .wp-portfolio-desc h4 {
+    justify-content: flex-start;
+  }
+  p {
+    line-height: 28px;
+  }
+  .portfolio-item .left {
+    float: left;
+  }
+  .portfolio-item .right {
+    float: right;
+  }
+  .code-links {
+    margin-top: 0;
+  }
+
+
+  /* Process */
+  p.process-expand {
+    display: none;
+  }
+  .portelement {
+    width: 32.5% !important;
+  }
+  .portelement .title-block h3 {
+    width: auto !important;
+    text-align: center;
+  }
+  /* Pop-up */
+  .huge_it_portfolio_popup_list .popup-wrapper .right-block .description, .huge_it_portfolio_popup_list .popup-wrapper .right-block .description p {
+    line-height: 24px;
+  }
+  .huge_it_portfolio_popup_list li.pupup-element {
+    margin: 0 7.5% !important;
+    width: 85% !important;
+  }
+  .huge_it_portfolio_popup_list li.pupup-element .popup-wrapper .right-block, .huge_it_portfolio_popup_list .popup-wrapper .image-block {
+    height: 100% !important;
+    min-height: 100% !important;
+  }
+  .huge_it_portfolio_popup_list li.pupup-element .popup-wrapper .right-block {
+    width: 42.8% !important;
+  }
+  .huge_it_portfolio_popup_list .popup-wrapper .image-block {
+    width: 55% !important;
+  }
+  .huge_it_portfolio_popup_list .popup-wrapper .right-block .title {
+    margin: 0 0 10px 0 !important
+  }
+
+
+  /* CONTACT FORM */
+  #nf-form-1-cont .textbox-container, #nf-form-1-cont .email-container {
+    width: 49%;
+  }
+  #nf-form-1-cont .textbox-container {
+    float: left;
+  }
+  #nf-form-1-cont .email-container {
+    float: right;
+    clear: none;
+  }
+  .nf-field-container, #ninja_forms_required_items {
+    margin-bottom: 25px;
+  }
+
+  /* === PORTFOLIO FRONT PAGE === */
+  h1.page-title {
+    font-size: 48px;
+    line-height: 55px;
+  }
+  .portfolio-item .tags li, .nav-within button, .nav-within a {
+    padding: 5px 10px;
+    font-size: 18px;
+  }
+
+  /* PORTFOLIO LIST */
+  .wp-portfolio-gallery .mix {
+    width: 32.5% !important;
+  }
+  .wp-portfolio-desc h4 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+  /* ABOUT */
+  .tabcontent img {
+    width: 42%;
+  }
+
+  /* HOME FRONT PAGE */
+  /* About */
+  .home-about h3 {
+    margin-top: 24px;
+  }
+  .home-about img {
+    width: 35%;
+  }
+  .home-about .margin-t {
+    margin-top: 20px;
+  }
+  /* Latest */
+
+  .lp-h4 {
+    height: auto;
+  }
+  .latest-projects-1 img {
+    height: 120px;
+  }
+
+
+  /* Index.php */
+  .post h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+}
